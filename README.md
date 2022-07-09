@@ -7,13 +7,13 @@ api maker is a simple api creator. using express
 
 
 ```bash
-npm install api-maker
+npm install @bulcane/api-maker
 ```
 
 ## Example
 
 ```javascript
-const api_maker = require("api-maker") //import the package
+const api_maker = require("@bulcane/api-maker") //import the package
 let api = new api_maker.Api();
 
 api.runOn(3200); //run the api on the selected port
@@ -33,7 +33,7 @@ api.server.run(); //start the server (express)
 
 ## Other examples
 ```javascript
-const api_maker = require("api-maker") //import the package
+const api_maker = require("@bulcane/api-maker") //import the package
 let api = new api_maker.Api();
 
 api.runOn(3000); //run the api on the selected port
