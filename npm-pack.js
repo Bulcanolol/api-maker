@@ -21,6 +21,9 @@ class Api {
             app.listen(port, function() {
                 console.log(startMessage);
             })
+        },
+        stop: function() {
+            process.exit(1);
         }
     }
 
@@ -39,6 +42,12 @@ class Api {
        app.get('/'+pname, (req, res) => {
         res.send(dat);
        })
+    }
+
+    setTitle(title) {
+        app.get("/", (err, res) => {
+            res.render({title: title})
+        })
     }
 }
 
